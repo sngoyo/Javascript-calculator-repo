@@ -1,0 +1,105 @@
+:root {
+    --numbersButtonColor: rgba(197, 197, 202, 0.397);
+    --operatorsButtonColor: rgb(19, 65, 80);
+    --deleteButtonColor: rgb(163, 36, 36);
+    --backgroundColor: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    max-height: 100vh;
+    width: 25rem;
+    background: var(--backgroundColor);
+    margin: auto;
+    margin-top: 10rem;
+    border-style: solid;
+}
+
+#display {
+    width: 24.8rem;
+    height: 4.5rem;
+    background-color: black;
+}
+
+#clear {
+    width: 12.5rem;
+    height: 4rem;
+    background-color: var(--deleteButtonColor);
+    color: white;
+}
+
+.opsAndClearButton {
+    display: flex;
+}
+
+.Operators-container {
+    display: inline-grid;
+    grid-template-columns: 12.5 6.25rem 6.25rem;
+    align-content: end;
+    overflow: hidden;
+    align-items: left;
+}
+
+.ops-button {
+    width: 6.25rem;
+    height: 4rem;
+    background-color: var(--operatorsButtonColor);
+    color: white;
+}
+
+.numbersButtons {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.numbersButtons button {
+    width: 6.25rem;
+    height: 4rem;
+    background-color: var(--numbersButtonColor);
+    color: white;
+}
+
+#zero {
+    width: 12.5rem;
+}
+
+#equals {
+    height: 9rem;
+    background-color: rgb(68, 54, 194);
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    position: absolute;
+    width: 6rem;
+    top: 26.7rem;
+    left: 56.4rem;
+    height: 8rem;
+}
+
+#add {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    position: absolute;
+    top: 22.7rem;
+    left: 56.4rem;
+    width: 6rem;
+}
+
+#subtract {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#multiply {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
