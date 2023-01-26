@@ -3,14 +3,17 @@ import './App.css';
 import Button from "./Components/buttons.js";
 
 
-function App() {
+function App(props) {
 
   return (
-
+    <>
     <div className="App">
-     <input id="display"></input>
+
      <Button />
     </div>
+    <p className="designer">Designed and Coded By </p>
+    <p className="designer-name"><span>Salim Ngoyo</span></p>
+    </>
 
   );
 
